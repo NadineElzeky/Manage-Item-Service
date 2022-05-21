@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="176.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.addController">
+   <children>
+      <ImageView fitHeight="212.0" fitWidth="345.0" layoutY="-17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/application/Images/login.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="text1" fill="WHITE" layoutX="8.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This barcode is already given to a product  if you want to increase Quantity  and Change Cost                            Click YES" wrappingWidth="318.93670654296875">
+         <font>
+            <Font name="Baskerville Old Face" size="14.0" />
+         </font></Text>
+      <Button fx:id="yes" layoutX="55.0" layoutY="116.0" mnemonicParsing="false" onAction="#Yes" styleClass="green" text="Yes" />
+      <Button fx:id="no" layoutX="205.0" layoutY="116.0" mnemonicParsing="false" onAction="#No" styleClass="red" text="No" />
+   </children>
+</AnchorPane>

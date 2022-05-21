@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="237.0" prefWidth="758.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <ImageView fitHeight="505.0" fitWidth="770.0" layoutX="-6.0" layoutY="-123.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/application/Images/login.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="add" layoutX="14.0" layoutY="28.0" mnemonicParsing="false" onAction="#Add" prefHeight="38.0" prefWidth="145.0" styleClass="dark-blue" text="Add Item" />
+      <Button id="sell" fx:id="sell" layoutX="199.0" layoutY="28.0" mnemonicParsing="false" onAction="#Sell" prefHeight="38.0" prefWidth="145.0" styleClass="dark-blue" text="Sell Item" />
+      <Button id="refund" fx:id="refund" layoutX="387.0" layoutY="28.0" mnemonicParsing="false" onAction="#Refund" prefHeight="38.0" prefWidth="145.0" styleClass="dark-blue" text="Refund Item" />
+      <Button id="check" fx:id="check" layoutX="581.0" layoutY="28.0" mnemonicParsing="false" onAction="#Edit" prefHeight="38.0" prefWidth="145.0" styleClass="dark-blue" text="Check Item" />
+      <Button id="cost" fx:id="history" layoutX="14.0" layoutY="153.0" mnemonicParsing="false" onAction="#History" prefHeight="38.0" prefWidth="145.0" styleClass="dark-blue" text="History" />
+      <Button id="exit" fx:id="create" layoutX="199.0" layoutY="153.0" mnemonicParsing="false" onAction="#Create" prefHeight="38.0" prefWidth="145.0" styleClass="dark-blue" text="Create User" />
+      <Button id="exit" fx:id="delete" layoutX="387.0" layoutY="153.0" mnemonicParsing="false" onAction="#Delete" prefHeight="38.0" prefWidth="145.0" styleClass="dark-blue" text="Delete User" />
+      <Button id="exit" fx:id="exit" layoutX="581.0" layoutY="153.0" mnemonicParsing="false" onAction="#Exit" prefHeight="38.0" prefWidth="145.0" styleClass="dark-blue" text="EXIT" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="385.0" prefWidth="531.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.addController">
+   <children>
+      <ImageView fitHeight="385.0" fitWidth="623.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/application/Images/login.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="confirm" layoutX="433.0" layoutY="318.0" mnemonicParsing="false" onAction="#confirm" onKeyPressed="#pressed" prefHeight="30.0" prefWidth="83.0" styleClass="dark-blue" text="Confirm">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="153.0" layoutY="29.0" prefHeight="46.0" prefWidth="56.0" text="Barcode" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="barcode" focusTraversable="false" layoutX="224.0" layoutY="40.0" onMouseClicked="#edited" />
+      <Label alignment="CENTER" layoutX="153.0" layoutY="77.0" prefHeight="46.0" prefWidth="56.0" text="Name" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="name" focusTraversable="false" layoutX="223.0" layoutY="87.0" />
+      <Label alignment="CENTER" layoutX="153.0" layoutY="122.0" prefHeight="46.0" prefWidth="56.0" text="Price" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="price" focusTraversable="false" layoutX="224.0" layoutY="132.0" onMouseClicked="#edited2" onMouseExited="#checking" />
+      <Label alignment="CENTER" layoutX="150.0" layoutY="169.0" prefHeight="46.0" prefWidth="56.0" text="Profit %" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="profit" focusTraversable="false" layoutX="223.0" layoutY="180.0" onMouseClicked="#edited2" onMouseExited="#checking" onMousePressed="#checking" />
+      <Label alignment="CENTER" layoutX="147.0" layoutY="216.0" prefHeight="46.0" prefWidth="62.0" text="Quantity" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="quantity" focusTraversable="false" layoutX="223.0" layoutY="227.0" onMouseClicked="#edited" />
+      <Label alignment="CENTER" layoutX="143.0" layoutY="262.0" prefHeight="46.0" prefWidth="70.0" text="Final Cost" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="finalCost" disable="true" focusTraversable="false" layoutX="223.0" layoutY="273.0" onMouseClicked="#edited2" />
+      <RadioButton fx:id="set" alignment="CENTER_RIGHT" focusTraversable="false" layoutX="433.0" layoutY="277.0" mnemonicParsing="false" onAction="#set" text="Set-Manual" textFill="WHITE" />
+   </children>
+</AnchorPane>
